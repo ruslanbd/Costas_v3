@@ -1,7 +1,43 @@
+//-----------------------------------------------------------------------------
+// Author: Ruslan Gindullin (W2HAT)
+// Date: 2025-02-17
+// Version: 3.0
+// Revision: 1.0
+// License: MIT
+// Name: Costas_TopLevel
+// Description: 
+//
+// Costas_TopLevel is the top-level module for an amateur radio beacon. 
+// It provides the necessary clock signals and triggers for the operation of
+// an MCU loading an ad9850 DDS chip for precisely timed Costas array 
+// transmissions and station ID using PSK. 
+//
+//
+// Parameters:
+// - PSK_SIGNAL_RATE_HZ: The signal rate for PSK transmission in Hz.
+// (TODO: actually implement this)
+//
+// Inputs:
+// - sys_clk: 27MHz embedded clock (used for testing)
+// - pps: 1Hz pulse
+// - clk10M_w: 10MHz clock
+// - costas_txrq: Costas array transmission request from MCU
+// - psk_txrq: PSK transmission request from MCU
+//
+// Outputs:
+// - mcu_costas_trigger: Costas array trigger
+// - mcu_costas_clk: Costas array clock
+// - mcu_psk_trigger: PSK trigger
+// - mcu_psk_clk: PSK clock
+// - fq_ud: Frequency update request
+// - unlock: Unlock signal
+// - unlock_psk: PSK Unlock signal
+// - ledr: LEDs for monitoring
+//-----------------------------------------------------------------------------
 module Costas_TopLevel#(parameter PSK_SIGNAL_RATE_HZ = 125)(
-  input logic sys_clk, // 27MHz embedded clock
+  input logic sys_clk, // 27 MHz embedded clock
   input logic pps, // 1Hz pulse
-  input logic clk10M_w, // 10MHz clock
+  input logic clk10M_w, // 10MHz clock (MHz)
   input logic costas_txrq, // Costas array transmission request
   input logic psk_txrq, // PSK transmission request
   output logic mcu_costas_trigger, // Costas array trigger
