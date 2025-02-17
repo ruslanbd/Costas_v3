@@ -1,0 +1,36 @@
+GowinSynthesis start
+Running parser ...
+Analyzing Verilog file '/home/gindrus/fpga/Costas_v3/src/Costas_Clock_counter1000.v'
+Analyzing Verilog file '/home/gindrus/fpga/Costas_v3/src/Costas_Clock_counter60.v'
+Analyzing Verilog file '/home/gindrus/fpga/Costas_v3/src/Costas_Clock_counter600.v'
+Analyzing Verilog file '/home/gindrus/fpga/Costas_v3/src/Costas_Master_Counter.v'
+Analyzing Verilog file '/home/gindrus/fpga/Costas_v3/src/TopLevel.v'
+Analyzing Verilog file '/home/gindrus/fpga/Costas_v3/src/gowin_rpll/gowin_rpll.v'
+Compiling module 'Costas_TopLevel'("/home/gindrus/fpga/Costas_v3/src/TopLevel.v":1)
+Compiling module 'counter60'("/home/gindrus/fpga/Costas_v3/src/Costas_Clock_counter60.v":1)
+Compiling module 'counter600'("/home/gindrus/fpga/Costas_v3/src/Costas_Clock_counter600.v":1)
+Compiling module 'master_Counter(CLKDIV=250000,DUTY=50)'("/home/gindrus/fpga/Costas_v3/src/Costas_Master_Counter.v":1)
+Compiling module 'master_Counter(CLKDIV=12500,DUTY=50)'("/home/gindrus/fpga/Costas_v3/src/Costas_Master_Counter.v":1)
+Compiling module 'master_Counter(CLKDIV=4,DUTY=25)'("/home/gindrus/fpga/Costas_v3/src/Costas_Master_Counter.v":1)
+Compiling module 'master_Counter(CLKDIV=4,DUTY=75)'("/home/gindrus/fpga/Costas_v3/src/Costas_Master_Counter.v":1)
+NOTE  (EX0101) : Current top module is "Costas_TopLevel"
+[5%] Running netlist conversion ...
+WARN  (CV0016) : Input sys_clk is unused("/home/gindrus/fpga/Costas_v3/src/TopLevel.v":2)
+Running device independent optimization ...
+[10%] Optimizing Phase 0 completed
+[15%] Optimizing Phase 1 completed
+[25%] Optimizing Phase 2 completed
+Running inference ...
+[30%] Inferring Phase 0 completed
+[40%] Inferring Phase 1 completed
+[50%] Inferring Phase 2 completed
+[55%] Inferring Phase 3 completed
+Running technical mapping ...
+[60%] Tech-Mapping Phase 0 completed
+[65%] Tech-Mapping Phase 1 completed
+[75%] Tech-Mapping Phase 2 completed
+[80%] Tech-Mapping Phase 3 completed
+[90%] Tech-Mapping Phase 4 completed
+[95%] Generate netlist file "/home/gindrus/fpga/Costas_v3/impl/gwsynthesis/Costas_v3.vg" completed
+[100%] Generate report file "/home/gindrus/fpga/Costas_v3/impl/gwsynthesis/Costas_v3_syn.rpt.html" completed
+GowinSynthesis finish

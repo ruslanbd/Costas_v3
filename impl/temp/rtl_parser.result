@@ -1,0 +1,92 @@
+[
+ {
+  "InstFile" : "/home/gindrus/fpga/Costas_v3/src/Costas_Clock_counter1000.v",
+  "InstLine" : 1,
+  "InstName" : "counter1000",
+  "ModuleFile" : "/home/gindrus/fpga/Costas_v3/src/Costas_Clock_counter1000.v",
+  "ModuleLine" : 1,
+  "ModuleName" : "counter1000"
+ },
+ {
+  "InstFile" : "/home/gindrus/fpga/Costas_v3/src/TopLevel.v",
+  "InstLine" : 1,
+  "InstName" : "Costas_TopLevel",
+  "ModuleFile" : "/home/gindrus/fpga/Costas_v3/src/TopLevel.v",
+  "ModuleLine" : 1,
+  "ModuleName" : "Costas_TopLevel",
+  "SubInsts" : [
+   {
+    "InstFile" : "/home/gindrus/fpga/Costas_v3/src/TopLevel.v",
+    "InstLine" : 31,
+    "InstName" : "counter60",
+    "ModuleFile" : "/home/gindrus/fpga/Costas_v3/src/Costas_Clock_counter60.v",
+    "ModuleLine" : 1,
+    "ModuleName" : "counter60"
+   },
+   {
+    "InstFile" : "/home/gindrus/fpga/Costas_v3/src/TopLevel.v",
+    "InstLine" : 32,
+    "InstName" : "counter600",
+    "ModuleFile" : "/home/gindrus/fpga/Costas_v3/src/Costas_Clock_counter600.v",
+    "ModuleLine" : 1,
+    "ModuleName" : "counter600"
+   },
+   {
+    "InstFile" : "/home/gindrus/fpga/Costas_v3/src/TopLevel.v",
+    "InstLine" : 37,
+    "InstName" : "interCostasCounter",
+    "ModuleFile" : "/home/gindrus/fpga/Costas_v3/src/Costas_Master_Counter.v",
+    "ModuleLine" : 1,
+    "ModuleName" : "master_Counter"
+   },
+   {
+    "InstFile" : "/home/gindrus/fpga/Costas_v3/src/TopLevel.v",
+    "InstLine" : 38,
+    "InstName" : "interPskCounter",
+    "ModuleFile" : "/home/gindrus/fpga/Costas_v3/src/Costas_Master_Counter.v",
+    "ModuleLine" : 1,
+    "ModuleName" : "master_Counter"
+   },
+   {
+    "InstFile" : "/home/gindrus/fpga/Costas_v3/src/TopLevel.v",
+    "InstLine" : 39,
+    "InstName" : "CostasCounter",
+    "ModuleFile" : "/home/gindrus/fpga/Costas_v3/src/Costas_Master_Counter.v",
+    "ModuleLine" : 1,
+    "ModuleName" : "master_Counter"
+   },
+   {
+    "InstFile" : "/home/gindrus/fpga/Costas_v3/src/TopLevel.v",
+    "InstLine" : 40,
+    "InstName" : "fq_udCounterCostas",
+    "ModuleFile" : "/home/gindrus/fpga/Costas_v3/src/Costas_Master_Counter.v",
+    "ModuleLine" : 1,
+    "ModuleName" : "master_Counter"
+   },
+   {
+    "InstFile" : "/home/gindrus/fpga/Costas_v3/src/TopLevel.v",
+    "InstLine" : 41,
+    "InstName" : "fq_udCounterPsk",
+    "ModuleFile" : "/home/gindrus/fpga/Costas_v3/src/Costas_Master_Counter.v",
+    "ModuleLine" : 1,
+    "ModuleName" : "master_Counter"
+   },
+   {
+    "InstFile" : "/home/gindrus/fpga/Costas_v3/src/TopLevel.v",
+    "InstLine" : 42,
+    "InstName" : "PskCounter",
+    "ModuleFile" : "/home/gindrus/fpga/Costas_v3/src/Costas_Master_Counter.v",
+    "ModuleLine" : 1,
+    "ModuleName" : "master_Counter"
+   }
+  ]
+ },
+ {
+  "InstFile" : "/home/gindrus/fpga/Costas_v3/src/gowin_rpll/gowin_rpll.v",
+  "InstLine" : 10,
+  "InstName" : "Gowin_rPLL",
+  "ModuleFile" : "/home/gindrus/fpga/Costas_v3/src/gowin_rpll/gowin_rpll.v",
+  "ModuleLine" : 10,
+  "ModuleName" : "Gowin_rPLL"
+ }
+]

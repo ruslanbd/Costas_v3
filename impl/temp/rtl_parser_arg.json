@@ -1,0 +1,37 @@
+{
+ "Device" : "GW2AR-18C",
+ "Files" : [
+  {
+   "Path" : "/home/gindrus/fpga/Costas_v3/src/Costas_Clock_counter1000.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "/home/gindrus/fpga/Costas_v3/src/Costas_Clock_counter60.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "/home/gindrus/fpga/Costas_v3/src/Costas_Clock_counter600.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "/home/gindrus/fpga/Costas_v3/src/Costas_Master_Counter.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "/home/gindrus/fpga/Costas_v3/src/TopLevel.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "/home/gindrus/fpga/Costas_v3/src/gowin_rpll/gowin_rpll.v",
+   "Type" : "verilog"
+  }
+ ],
+ "IncludePath" : [
+
+ ],
+ "LoopLimit" : 2000,
+ "ResultFile" : "/home/gindrus/fpga/Costas_v3/impl/temp/rtl_parser.result",
+ "Top" : "Costas_TopLevel",
+ "VerilogStd" : "sysv",
+ "VhdlStd" : "vhdl_93"
+}

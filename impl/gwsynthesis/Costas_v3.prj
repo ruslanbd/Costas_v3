@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE gowin-synthesis-project>
+<Project>
+    <Version>beta</Version>
+    <Device id="GW2AR-18C" package="QFN88" speed="8" partNumber="GW2AR-LV18QN88C8/I7"/>
+    <FileList>
+        <File path="/home/gindrus/fpga/Costas_v3/src/Costas_Clock_counter1000.v" type="verilog"/>
+        <File path="/home/gindrus/fpga/Costas_v3/src/Costas_Clock_counter60.v" type="verilog"/>
+        <File path="/home/gindrus/fpga/Costas_v3/src/Costas_Clock_counter600.v" type="verilog"/>
+        <File path="/home/gindrus/fpga/Costas_v3/src/Costas_Master_Counter.v" type="verilog"/>
+        <File path="/home/gindrus/fpga/Costas_v3/src/TopLevel.v" type="verilog"/>
+        <File path="/home/gindrus/fpga/Costas_v3/src/gowin_rpll/gowin_rpll.v" type="verilog"/>
+    </FileList>
+    <OptionList>
+        <Option type="disable_insert_pad" value="0"/>
+        <Option type="global_freq" value="100.000"/>
+        <Option type="looplimit" value="2000"/>
+        <Option type="output_file" value="/home/gindrus/fpga/Costas_v3/impl/gwsynthesis/Costas_v3.vg"/>
+        <Option type="print_all_synthesis_warning" value="1"/>
+        <Option type="ram_rw_check" value="0"/>
+        <Option type="top_module" value="Costas_TopLevel"/>
+        <Option type="vcc" value="1.0"/>
+        <Option type="verilog_language" value="sysv-2017"/>
+        <Option type="vhdl_language" value="vhdl-1993"/>
+    </OptionList>
+</Project>
