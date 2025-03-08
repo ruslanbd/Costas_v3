@@ -22,8 +22,10 @@ output wire clockout
                             count <= 0;
                             syncd <= 1;
                         end else begin 
+                            if(sync && syncd) begin 
+                                syncd <= 0;
+                            end
                             count <= duty_next(CLKDIV, DUTY);
-                            if(sync && syncd) syncd <= 0;
                             clkstate <= 1'd0;
                         end
                    end

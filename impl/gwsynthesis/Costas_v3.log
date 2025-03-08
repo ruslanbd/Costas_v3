@@ -10,7 +10,7 @@ Compiling module 'Costas_TopLevel'("/home/gindrus/fpga/Costas_v3/src/TopLevel.v"
 Compiling module 'counter60'("/home/gindrus/fpga/Costas_v3/src/Costas_Clock_counter60.v":1)
 Compiling module 'counter600'("/home/gindrus/fpga/Costas_v3/src/Costas_Clock_counter600.v":1)
 Compiling module 'master_Counter(CLKDIV=250000,DUTY=50)'("/home/gindrus/fpga/Costas_v3/src/Costas_Master_Counter.v":1)
-Compiling module 'master_Counter(CLKDIV=12500,DUTY=50)'("/home/gindrus/fpga/Costas_v3/src/Costas_Master_Counter.v":1)
+Compiling module 'master_Counter(CLKDIV=6250,DUTY=50)'("/home/gindrus/fpga/Costas_v3/src/Costas_Master_Counter.v":1)
 Compiling module 'master_Counter(CLKDIV=4,DUTY=25)'("/home/gindrus/fpga/Costas_v3/src/Costas_Master_Counter.v":1)
 Compiling module 'master_Counter(CLKDIV=4,DUTY=75)'("/home/gindrus/fpga/Costas_v3/src/Costas_Master_Counter.v":1)
 NOTE  (EX0101) : Current top module is "Costas_TopLevel"

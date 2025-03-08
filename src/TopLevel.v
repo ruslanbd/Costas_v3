@@ -35,7 +35,7 @@ module Costas_TopLevel#(parameter PSK_SIGNAL_RATE_HZ = 125)(
   
 
   master_Counter #(.CLKDIV(250000), .DUTY( 50 )) interCostasCounter (.clockin(clk10M_w), .clockout(interCostasClock), .sync(unlock));
-  master_Counter #(.CLKDIV(12500), .DUTY( 50 )) interPskCounter (.clockin(clk10M_w), .clockout(interPskClock), .sync(unlock_psk));
+  master_Counter #(.CLKDIV(6250), .DUTY( 50 )) interPskCounter (.clockin(clk10M_w), .clockout(interPskClock), .sync(unlock_psk));
   master_Counter #(.CLKDIV(4), .DUTY( 25 ) ) CostasCounter (.clockin(interCostasClock), .clockout(mcu_costas_clk), .sync(1'b1));
   master_Counter #(.CLKDIV(4), .DUTY( 75 ) ) fq_udCounterCostas (.clockin(interCostasClock), .clockout(Costas_fq_ud_n), .sync(1'b1));
   master_Counter #(.CLKDIV(4), .DUTY( 75 ) ) fq_udCounterPsk (.clockin(interPskClock), .clockout(Psk_fq_ud_n), .sync(1'b1));
