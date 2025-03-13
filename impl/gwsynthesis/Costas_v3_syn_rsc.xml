@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Module name="Costas_TopLevel" Lut="2" T_Register="220(0)" T_Lut="437(2)">
+<Module name="Costas_TopLevel" Lut="6" T_Register="220(0)" T_Lut="443(6)">
  <SubModule name="counter60" Register="8" Lut="13" T_Register="8(8)" T_Lut="13(13)"/>
- <SubModule name="counter600" Register="12" Lut="26" T_Register="12(12)" T_Lut="26(26)"/>
- <SubModule name="interCostasCounter" Register="34" Lut="73" T_Register="34(34)" T_Lut="73(73)"/>
+ <SubModule name="counter600" Register="12" Lut="25" T_Register="12(12)" T_Lut="25(25)"/>
+ <SubModule name="interCostasCounter" Register="34" Lut="75" T_Register="34(34)" T_Lut="75(75)"/>
  <SubModule name="interPskCounter" Register="34" Lut="74" T_Register="34(34)" T_Lut="74(74)"/>
- <SubModule name="CostasCounter" Register="33" Lut="63" T_Register="33(33)" T_Lut="63(63)"/>
- <SubModule name="fq_udCounterCostas" Register="33" Lut="64" T_Register="33(33)" T_Lut="64(64)"/>
- <SubModule name="fq_udCounterPsk" Register="33" Lut="63" T_Register="33(33)" T_Lut="63(63)"/>
+ <SubModule name="CostasCounter" Register="33" Lut="64" T_Register="33(33)" T_Lut="64(64)"/>
+ <SubModule name="fq_udCounterCostas" Register="33" Lut="63" T_Register="33(33)" T_Lut="63(63)"/>
+ <SubModule name="fq_udCounterPsk" Register="33" Lut="64" T_Register="33(33)" T_Lut="64(64)"/>
  <SubModule name="PskCounter" Register="33" Lut="59" T_Register="33(33)" T_Lut="59(59)"/>
 </Module>

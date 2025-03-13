@@ -17,7 +17,7 @@ Running routing......
 [70%] Routing Phase 1 completed
 [80%] Routing Phase 2 completed
 WARN  (PR1014) : Generic routing resource will be used to clock signal 'clk10M_w_d' by the specified constraint. And then it may lead to the excessive delay or skew
-WARN  (PR1014) : Generic routing resource will be used to clock signal 'ledr_d[2]' by the specified constraint. And then it may lead to the excessive delay or skew
+WARN  (PR1014) : Generic routing resource will be used to clock signal 'pps_d' by the specified constraint. And then it may lead to the excessive delay or skew
 [90%] Routing Phase 3 completed
 Running timing analysis......
 [95%] Timing analysis completed
@@ -31,5 +31,5 @@ Generate file "/home/gindrus/fpga/Costas_v3/impl/pnr/Costas_v3.pin.html" complet
 Generate file "/home/gindrus/fpga/Costas_v3/impl/pnr/Costas_v3.rpt.html" completed
 Generate file "/home/gindrus/fpga/Costas_v3/impl/pnr/Costas_v3.rpt.txt" completed
 Generate file "/home/gindrus/fpga/Costas_v3/impl/pnr/Costas_v3.tr.html" completed
-Wed Feb 26 03:01:23 2025
+Wed Mar 12 23:39:58 2025
 

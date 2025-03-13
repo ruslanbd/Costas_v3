@@ -85,8 +85,8 @@ module Costas_TopLevel#(parameter PSK_SIGNAL_RATE_HZ = 125)(
 
   
 
-  master_Counter #(.CLKDIV(250000), .DUTY( 50 )) interCostasCounter (.clockin(clk10M_w), .clockout(interCostasClock), .sync(unlock));
-  master_Counter #(.CLKDIV(6250), .DUTY( 50 )) interPskCounter (.clockin(clk10M_w), .clockout(interPskClock), .sync(unlock_psk));
+  master_Counter #(.CLKDIV(25000*125), .DUTY( 50 )) interCostasCounter (.clockin(clk10M_w), .clockout(interCostasClock), .sync(unlock));
+  master_Counter #(.CLKDIV(625*125), .DUTY( 50 )) interPskCounter (.clockin(clk10M_w), .clockout(interPskClock), .sync(unlock_psk));
   master_Counter #(.CLKDIV(4), .DUTY( 25 ) ) CostasCounter (.clockin(interCostasClock), .clockout(mcu_costas_clk), .sync(1'b1));
   master_Counter #(.CLKDIV(4), .DUTY( 75 ) ) fq_udCounterCostas (.clockin(interCostasClock), .clockout(Costas_fq_ud_n), .sync(1'b1));
   master_Counter #(.CLKDIV(4), .DUTY( 75 ) ) fq_udCounterPsk (.clockin(interPskClock), .clockout(Psk_fq_ud_n), .sync(1'b1));
@@ -95,9 +95,9 @@ module Costas_TopLevel#(parameter PSK_SIGNAL_RATE_HZ = 125)(
   assign fq_ud = (Costas_fq_ud&costas_txrq) | (Psk_fq_ud&psk_txrq);
   assign mcu_costas_trigger = clock60 & (~clock600);
   assign mcu_psk_trigger = clock600;
-  assign ledr[0] = mcu_costas_trigger;
-  assign ledr[1] = mcu_psk_trigger;
-  assign ledr[2] = pps;
-  assign ledr[3] = mcu_costas_clk;
+  assign ledr[0] = ~mcu_costas_trigger;
+  assign ledr[1] = ~mcu_psk_trigger;
+  assign ledr[2] = ~pps;
+  assign ledr[3] = ~mcu_costas_clk;
 
 endmodule

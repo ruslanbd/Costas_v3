@@ -8,12 +8,12 @@ output reg unlock
     reg clkstate = 0;
     always @(posedge clock) begin
         case(count)
-            10'd29:  begin
+            10'd559:  begin
                         count <= 10'd0;
                         clkstate <= 1'b1;
                     end
-            10'd28: begin
-                        count <= 10'd29;
+            10'd558: begin
+                        count <= 10'd559;
                         unlock <= 1'd0;
                     end
             10'd1:   begin
